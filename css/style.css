@@ -35,6 +35,7 @@ nav{
     border-radius: 10px;
     color: white;
     padding: 30px 10%;
+    margin-bottom: 50px;
 }
 
 #arrow{
@@ -64,4 +65,69 @@ nav div:last-child{
     margin-top: 20px;
     font-size: 30px;
     font-weight: bold;
+}
+
+
+
+/* sezione con liste nestate */
+section{
+    background-color: #d9645940;
+    border-radius: 10px;
+    padding: 30px 10%;
+}
+
+.l-title{
+    color: #d96459;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/* lista principale non numerata */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li.unordered:before {
+  content: "\f017";
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: 0;
+  width: 30px;
+  font-size: 25px;
+  color:  #d96459;
+}
+
+
+
+/* liste numerate */
+.ordered {
+    width: 100%;
+    margin: 20px 0;
+    list-style: none;
+    counter-reset: li;
+}
+
+.ordered li {
+    position: relative;
+    margin: 20px;
+    border: 3px solid #d96459;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+}
+
+.ordered li:before {
+    position: absolute;
+    top: -10px;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    font-size: 16px;
+    font-weight: bold;
+    color: #d96459;
+    background: white;
+    border-radius: 50%;
+    counter-increment: li;
+    content: counter(li);
 }
