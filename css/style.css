@@ -74,6 +74,7 @@ section{
     background-color: #d9645940;
     border-radius: 10px;
     padding: 30px 10%;
+    margin-bottom: 50px;
 }
 
 .l-title{
@@ -130,4 +131,14 @@ li.unordered:before {
     border-radius: 50%;
     counter-increment: li;
     content: counter(li);
+}
+
+
+
+/* form section */
+input{
+    border: 3px solid #d9645950;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
 }
