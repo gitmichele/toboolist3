@@ -1,5 +1,22 @@
+/* regole generali */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;;
+}
+
+body{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+}
+
+
+
+/* header */
+header{
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    padding:40px 25%;
+    background-color: #d9645999;
 }
