@@ -90,7 +90,7 @@ ul {
   padding: 0;
 }
 
-li.unordered:before {
+.unordered > li:before {
   content: "\f017";
   font-family: FontAwesome;
   display: inline-block;
