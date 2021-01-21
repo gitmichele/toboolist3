@@ -140,17 +140,27 @@ form{
     background-color:#d9645920;
     border-radius: 10px;
     text-align: center;
-
+    padding: 40px;
 }
 
 #form-title{
     font-size: 2.5em;
     color: #d96459;
     font-weight: bold;
-    padding: 20px;
+    margin-bottom: 30px;
 }
 
-input[type="text"]{
+input, select{
+    border: 3px solid #d96459;
+    border-radius: 10px;
+    height: 50px;
+    background: white;
+    margin: 0 10px;
+}
+
+input#description{
+    display: block;
+    margin: 20px auto;
     border: 3px solid #d96459;
     border-radius: 10px;
     height: 50px;
@@ -158,7 +168,35 @@ input[type="text"]{
     padding-left: 30px;
 }
 
-input:focus{
+input[type="date"]{
+    text-align: center;
+}
+
+input[type="time"]{
+    padding-left: 10px;
+}
+
+input[type="text"]{
+    padding-left: 15px;
+}
+
+input[type="button"]{
+    display: block;
+    margin: 40px auto 0;
+    background-color: #d96459;
+    color: white;
+    width: 20%;
+    height: 80px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+input:focus, select:focus, #description:focus{
     outline-width: 0;
     border: 3px solid #82b74b;
+}
+
+
+input[type="button"]:focus{
+    background-color: #82b74b;
 }
